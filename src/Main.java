@@ -11,17 +11,18 @@ public class Main {
 		 *  establecer el CÓDIGO del idioma que vamos a usar
 		 */
 		Locale locale = new Locale("");		
+		Locale locale_es_ES = new Locale("es", "ES");		
 		
 		/*
 		 * Con resourceBundle se selecciona el archivo PROPERTIES + código de idioma
 		 */
-		ResourceBundle resourceBundle = ResourceBundle.getBundle("res.bundle", locale);
+		ResourceBundle resourceBundle = ResourceBundle.getBundle("res.bundle", locale_es_ES);
 
 		/*
 		 * imprime por pantalla el contenido usando las llaves		
 		 */
 
-		System.out.println(resourceBundle.getString("welcome"));
+		System.out.println(resourceBundle.getString("tryagain"));
 		
 	}
 
