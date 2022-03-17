@@ -8,12 +8,20 @@ public class Main {
 		
 		/*
 		 *  creo un OBJETO con el contenido de la clase LOCALE que me permite
-		 *  establecer el idioma que vamos a usar
+		 *  establecer el CÓDIGO del idioma que vamos a usar
 		 */
-		Locale locale_it_IT = new Locale("it", "IT");
-		ResourceBundle resourceBundle = ResourceBundle.getBundle("res.bundle", locale_it_IT);
+		Locale locale = new Locale("");		
 		
-		System.out.println(resourceBundle.getString("tryagain"));
+		/*
+		 * Con resourceBundle se selecciona el archivo PROPERTIES + código de idioma
+		 */
+		ResourceBundle resourceBundle = ResourceBundle.getBundle("res.bundle", locale);
+
+		/*
+		 * imprime por pantalla el contenido usando las llaves		
+		 */
+
+		System.out.println(resourceBundle.getString("welcome"));
 		
 	}
 
