@@ -12,11 +12,12 @@ public class Main {
 		 */
 		Locale locale = new Locale("");		
 		Locale locale_es_ES = new Locale("es", "ES");		
+		Locale locale_it_IT = new Locale("it", "IT");		
 		
 		/*
 		 * Con resourceBundle se selecciona el archivo PROPERTIES + código de idioma
 		 */
-		ResourceBundle resourceBundle = ResourceBundle.getBundle("res.bundle", locale_es_ES);
+		ResourceBundle resourceBundle = ResourceBundle.getBundle("res.bundle", locale_it_IT);
 
 		/*
 		 * imprime por pantalla el contenido usando las llaves		
